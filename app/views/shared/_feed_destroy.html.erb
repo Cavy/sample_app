@@ -1,0 +1,4 @@
+<% if current_user?(parent.user) %>
+	<%= link_to "delete", parent, :method => :delete, :data => { :confirm => "You sure?"},
+									:title => parent.content %>
+<% end %>
